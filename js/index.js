@@ -55,4 +55,15 @@ function criptografaTexto() {
   return textoCriptografado;
 }
 
+function descriptografaTexto(textoCriptografado) {
+  let textoDescriptografado = textoCriptografado
+    .replaceAll("ai", "a")
+    .replaceAll("enter", "e")
+    .replaceAll("imes", "i")
+    .replaceAll("ober", "o")
+    .replaceAll("ufat", "u");
+  return textoDescriptografado;
+}
+
 console.log(criptografaTexto());
+console.log(descriptografaTexto(textoCriptografado));
